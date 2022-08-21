@@ -49,8 +49,15 @@ cmake_ninja_workdir = /home/wang/Irobort2022/20220716/cmake-build-debug/
 
 build cmake_object_order_depends_target_20220716: phony || CMakeFiles/20220716.dir
 
-build CMakeFiles/20220716.dir/main.cpp.o: CXX_COMPILER__20220716_Debug /home/wang/Irobort2022/20220716/main.cpp || cmake_object_order_depends_target_20220716
-  DEP_FILE = CMakeFiles/20220716.dir/main.cpp.o.d
+build CMakeFiles/20220716.dir/caculate.cpp.o: CXX_COMPILER__20220716_Debug /home/wang/Irobort2022/20220716/caculate.cpp || cmake_object_order_depends_target_20220716
+  DEP_FILE = CMakeFiles/20220716.dir/caculate.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/usr/include/eigen3 -isystem /usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/20220716.dir
+  OBJECT_FILE_DIR = CMakeFiles/20220716.dir
+
+build CMakeFiles/20220716.dir/geography.cpp.o: CXX_COMPILER__20220716_Debug /home/wang/Irobort2022/20220716/cmake-build-debug/geography.cpp || cmake_object_order_depends_target_20220716
+  DEP_FILE = CMakeFiles/20220716.dir/geography.cpp.o.d
   FLAGS = -g
   INCLUDES = -I/usr/include/eigen3 -isystem /usr/local/include/opencv4
   OBJECT_DIR = CMakeFiles/20220716.dir
@@ -64,7 +71,7 @@ build CMakeFiles/20220716.dir/main.cpp.o: CXX_COMPILER__20220716_Debug /home/wan
 #############################################
 # Link the executable 20220716
 
-build 20220716: CXX_EXECUTABLE_LINKER__20220716_Debug CMakeFiles/20220716.dir/main.cpp.o | /usr/local/lib/libopencv_dnn.so.4.4.0 /usr/local/lib/libopencv_gapi.so.4.4.0 /usr/local/lib/libopencv_highgui.so.4.4.0 /usr/local/lib/libopencv_ml.so.4.4.0 /usr/local/lib/libopencv_objdetect.so.4.4.0 /usr/local/lib/libopencv_photo.so.4.4.0 /usr/local/lib/libopencv_stitching.so.4.4.0 /usr/local/lib/libopencv_video.so.4.4.0 /usr/local/lib/libopencv_videoio.so.4.4.0 /usr/local/lib/libopencv_imgcodecs.so.4.4.0 /usr/local/lib/libopencv_calib3d.so.4.4.0 /usr/local/lib/libopencv_features2d.so.4.4.0 /usr/local/lib/libopencv_flann.so.4.4.0 /usr/local/lib/libopencv_imgproc.so.4.4.0 /usr/local/lib/libopencv_core.so.4.4.0
+build 20220716: CXX_EXECUTABLE_LINKER__20220716_Debug CMakeFiles/20220716.dir/caculate.cpp.o CMakeFiles/20220716.dir/geography.cpp.o | /usr/local/lib/libopencv_dnn.so.4.4.0 /usr/local/lib/libopencv_gapi.so.4.4.0 /usr/local/lib/libopencv_highgui.so.4.4.0 /usr/local/lib/libopencv_ml.so.4.4.0 /usr/local/lib/libopencv_objdetect.so.4.4.0 /usr/local/lib/libopencv_photo.so.4.4.0 /usr/local/lib/libopencv_stitching.so.4.4.0 /usr/local/lib/libopencv_video.so.4.4.0 /usr/local/lib/libopencv_videoio.so.4.4.0 /usr/local/lib/libopencv_imgcodecs.so.4.4.0 /usr/local/lib/libopencv_calib3d.so.4.4.0 /usr/local/lib/libopencv_features2d.so.4.4.0 /usr/local/lib/libopencv_flann.so.4.4.0 /usr/local/lib/libopencv_imgproc.so.4.4.0 /usr/local/lib/libopencv_core.so.4.4.0
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libopencv_dnn.so.4.4.0  /usr/local/lib/libopencv_gapi.so.4.4.0  /usr/local/lib/libopencv_highgui.so.4.4.0  /usr/local/lib/libopencv_ml.so.4.4.0  /usr/local/lib/libopencv_objdetect.so.4.4.0  /usr/local/lib/libopencv_photo.so.4.4.0  /usr/local/lib/libopencv_stitching.so.4.4.0  /usr/local/lib/libopencv_video.so.4.4.0  /usr/local/lib/libopencv_videoio.so.4.4.0  /usr/local/lib/libopencv_imgcodecs.so.4.4.0  /usr/local/lib/libopencv_calib3d.so.4.4.0  /usr/local/lib/libopencv_features2d.so.4.4.0  /usr/local/lib/libopencv_flann.so.4.4.0  /usr/local/lib/libopencv_imgproc.so.4.4.0  /usr/local/lib/libopencv_core.so.4.4.0
   OBJECT_DIR = CMakeFiles/20220716.dir
